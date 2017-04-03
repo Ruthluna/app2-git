@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/sust.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Telefonía celular</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme="a">
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/ara.jpg" alt="ara" title="ara" id="wows1_0"/></li>
+		<li><img src="data1/images/celular.jpg" alt="celular" title="celular" id="wows1_1"/></li>
+		<li><img src="data1/images/gamaalta.jpg" alt="gamaalta" title="gamaalta" id="wows1_2"/></li>
+		<li><img src="data1/images/antiguo.jpg" alt="antiguo" title="antiguo" id="wows1_3"/></li>
+		<li><img src="data1/images/gamamedia.jpg" alt="gamamedia" title="gamamedia" id="wows1_4"/></li>
+		<li><img src="data1/images/gamabaja.jpg" alt="gamabaja" title="gamabaja" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/tel.jpg" alt="http://wowslider.net/" title="tel" id="wows1_6"/></a></li>
+		<li><img src="data1/images/nokia.jpg" alt="nokia" title="nokia" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="ara"><span><img src="data1/tooltips/ara.jpg" alt="ara"/>1</span></a>
+		<a href="#" title="celular"><span><img src="data1/tooltips/celular.jpg" alt="celular"/>2</span></a>
+		<a href="#" title="gamaalta"><span><img src="data1/tooltips/gamaalta.jpg" alt="gamaalta"/>3</span></a>
+		<a href="#" title="antiguo"><span><img src="data1/tooltips/antiguo.jpg" alt="antiguo"/>4</span></a>
+		<a href="#" title="gamamedia"><span><img src="data1/tooltips/gamamedia.jpg" alt="gamamedia"/>5</span></a>
+		<a href="#" title="gamabaja"><span><img src="data1/tooltips/gamabaja.jpg" alt="gamabaja"/>6</span></a>
+		<a href="#" title="tel"><span><img src="data1/tooltips/tel.jpg" alt="tel"/>7</span></a>
+		<a href="#" title="nokia"><span><img src="data1/tooltips/nokia.jpg" alt="nokia"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<li class="ui-fisrt-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es un teléfono celular?</h2>
+<p>Muestra información sobre la telefonía celular.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la Telefonía Celular</h2>
+<p>Muestra la Historia de la Telefonía celular.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificación de la Telefonía Celular</h2>
+<p>Se muestra la clsificación del teléfono celular.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañías que manejan la telefonía celular en México</h2>
+<p>Estas son las compañías de telefonía celular en México</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Teléfonos celulares del Futuro</h2>
+<p>Se muestran algunos de los teléfonos del futuro</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="128" height="128">
+</div>
+<div>
+<h4> Aplicacion Dos </h4>
+<h4>Ruth Luna Salazar</h4
+></div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> ¿Qué es un teléfono celular </h1>
+
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Un teléfono móvil o celular es un teléfono portátil que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico. </h2>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>móvil</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/movil.jpg" width="285" height="192"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefono</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/celular.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, RLS</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Historia </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>El teléfono celular se remonta a los inicios de la Segunda Guerra Mundial, donde ya se veía que era necesaria la comunicacióna distancia, es por eso que la compañía Motorola creó un equipo llamado Handie Talkie H12-16, que es un equipo que permite el contacto con las tropas vía ondas de radio que en ese tiempo no superaban más de 600 Khz. 
+
+Fue sólo cuestión de tiempo para que las dos tecnologías de Tesla y Marconi se unieran y dieran a la luz la comunicación mediante radio-teléfonos: Martín Cooper, pionero y considerado como el padre de la telefonía celular, fabricó el primer radio teléfono entre 1970 y 1973, en Estados Unidos, y en 1979 aparecieron los primeros sistemas a la venta en Tokio (Japón), fabricados por la Compañía NTT. Los países europeos no se quedaron atrás y en 1981 se introdujo en Escandinava un sistema similar a AMPS (Advanced Mobile Phone System). 
+
+En 1985 se comenzaron a perfeccionar y amoldar las características de este nuevo sistema revolucionario ya que permitía comunicarse a distancia. Fue así que en los años 1980 se llegó a crear un equipo que ocupaba recursos similares a los Handie Talkie pero que iba destinado a personas que por lo general eran grandes empresarios y debían estar comunicados, es ahí donde se crea el teléfono móvil y marca un hito en la historia de los componentes inalámbricos ya que con este equipo podría hablar a cualquier hora y en cualquier lugar. 
+</h2></div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Evolucion</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/evolucion.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Antiguos</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/antiguo.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Dos, RLS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Clasificación del Celular</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+         <h2> 
+<p>Gama Baja: Bajo este nombre se identifican a aquellos teléfonos móviles que si bien cuentan con una cámara de fotos, esta es de baja calidad.</p>
+
+<p>Gama Media:Ofrecen pantallas un poco más grandes que los anteriores, por lo que su calidad es bastante mayor y resultan mucho más prácticas para los usuarios.</p>
+
+<p>Gama Alta: los teléfonos móviles de alta gama ofrecen varias de las opciones antes mencionadas, pero con mejor calidad, como ocurre con la cámara de fotos o el reproductor de música. Además de esto, la conexión a Internet suele ser de mejor calidad y velocidad y ofrecen 3G. Además, cuentan con Bluetooth y como permiten conexión Wi Fi muchas veces no se venden con planes de Internet.</p></h2></div>
+       </div>
+       <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama Baja</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/gamabaja.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama Media</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/gamamedia.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama Alta</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/gamaalta.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Dos, RLS</h4>
+</div>
+</div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, RLS</h4>
+        </div>
+        </div>
+        
+        
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Compañías de telefono celular</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2><p><a href="http://telcel.com/" target="_self">Telcel</a></p>
+<p><a href="http://movistar.com/" target="_self">Movistar</a></p>
+<p><a href="http://att.com.mx/" target="_self">AT&T México.</a></p></h2>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Compañías de México</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/sust.jpg',1)"><img src="imagenes/ctm.jpg" width="298" height="168" id="Image13"></a> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>AT&T</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/at.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion Dos, RLS</h4>
+      </div>
+      </div>
+      
+      
+      <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Telefonos del Futuro </h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2>¿Cómo serán los celulares del futuro?
+<p>podemos concluir que los celulares del futuro seguramente serán sólo una parte más de un ecosistema de dispositivos inteligentes que estarán disponibles en el mundo. Pantallas flexibles, transparentes o de papel, teléfonos armables y sistemas que permitan comunicarnos con los demás sin usar las redes telefónicas son cosas que convergerán en un futuro que cada vez se ve menos lejano.</p>
+</h2></div>
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Proyecto ARA</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/ara.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Nokia</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/nokia.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Transparente</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/tel.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, RLS</h4>
+      </div>
+     </div>
+     
+     
+     
+     
+    </body>
+</html>
